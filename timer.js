@@ -15,8 +15,8 @@ function startTheTimer() {
 		var SECONDS_CONSTANT = 60;
 		var MILISECONDS_CONSTANT = 1000;
 
-		var MAX_TIME = __min * SECONDS_CONSTANT * MILISECONDS_CONSTANT;
-		var MIN_TIME = __max * SECONDS_CONSTANT * MILISECONDS_CONSTANT;
+		var MAX_TIME = __max * SECONDS_CONSTANT * MILISECONDS_CONSTANT;
+		var MIN_TIME = __min * SECONDS_CONSTANT * MILISECONDS_CONSTANT;
 
 		var timer = this;
 
@@ -91,7 +91,7 @@ function startTheTimer() {
 
 		this.bg_color = '#333';
 		this.fg_color = '#dedede';
-		this.bar_good_color = 'green';
+		this.bar_good_color = '#55B74E';
 
 		this.canvas = document.getElementById('timer');
 		this.canvas.width = this.width;
