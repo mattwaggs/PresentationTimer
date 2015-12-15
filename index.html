@@ -1,0 +1,58 @@
+<html><head>
+<title>Timer</title>
+<style>
+	html, body {
+		width:100%;
+		height:100%;
+		padding:0;
+		margin:0;
+	    background-color: #333;
+	}
+	#GO_BUTTON {
+		background-color: #55B74E;
+	    border: solid 1px #4CB545;
+	    padding: 16px;
+	    width: 200px;
+	    font-size: 22px;
+	    color: white;
+	    transition: all 0.3s;
+	}
+	#GO_BUTTON:hover {
+    	background-color: #3B8E35;
+	}
+	.TIME_FIELD {
+		background-color: #444;
+		border: solid 1px #666;
+		padding: 16px;
+		width: 200px;
+		font-size: 22px;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<canvas id="timer">
+		Canvas not supported by your browser..
+	</canvas>
+
+	<script src="timer.js"></script>
+
+	<div id="form" style="
+	font-family: monospace;
+	color: #dedede;
+	text-align: center;
+	font-size: 24pt;
+	font-weight: 100;
+	">
+
+	<h2>Enter The Times To Start</h2>
+
+	<input type="text" class="TIME_FIELD" id="min_time" placeholder="Minimum">
+	<input type="text" class="TIME_FIELD" id="max_time" placeholder="Maximum">
+
+	<input type="button" id="GO_BUTTON" value="Start Timer" onclick="startTheTimer();">
+
+</div>
+
+
+</body></html>
